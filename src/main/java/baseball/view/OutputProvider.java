@@ -1,6 +1,7 @@
 package baseball.view;
 
 import baseball.common.Message;
+import baseball.domain.BallCount;
 
 public class OutputProvider {
     public static void printWrongNumber() {
@@ -17,5 +18,13 @@ public class OutputProvider {
 
     public static void printInputNumbers() {
         System.out.print(Message.REQUEST_INPUT_NUMBERS);
+    }
+
+    public static void printFinishGame() {
+        System.out.println(Message.FINISH_GAME);
+    }
+
+    public static void printBallCount(BallCount ballCount) {
+        System.out.println(ballCount.toString());
     }
 }
