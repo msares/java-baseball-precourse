@@ -12,4 +12,11 @@ public class InputProvider {
         inputNumberValidator.validateInput(inputNumbers);
         return inputNumbers;
     }
+
+    public static String retryOptionInput() {
+        InputNumberValidator inputNumberValidator = new InputNumberValidator();
+        String inputNumber = readLine();
+        inputNumberValidator.validateRetryOption(inputNumber);
+        return inputNumber;
+    }
 }

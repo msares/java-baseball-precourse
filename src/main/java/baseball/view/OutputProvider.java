@@ -27,4 +27,8 @@ public class OutputProvider {
     public static void printBallCount(BallCount ballCount) {
         System.out.println(ballCount.toString());
     }
+
+    public static void printRetryOption() {
+        System.out.println(Message.RETRY_OPTION);
+    }
 }

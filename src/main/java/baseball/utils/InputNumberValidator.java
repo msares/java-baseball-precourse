@@ -37,4 +37,11 @@ public class InputNumberValidator {
             throw new IllegalArgumentException(Message.ERROR_INPUT_DUPLICATION);
         }
     }
+
+    public void validateRetryOption(String inputNumber) {
+        if (!inputNumber.matches("[1-2]")) {
+            OutputProvider.printWrongNumber();
+            throw new IllegalArgumentException(Message.ERROR_WRONG_INPUT);
+        }
+    }
 }
