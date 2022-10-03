@@ -14,4 +14,8 @@ public class OutputProvider {
     public static void printDuplication() {
         System.out.println(Message.ERROR_INPUT_DUPLICATION);
     }
+
+    public static void printInputNumbers() {
+        System.out.print(Message.REQUEST_INPUT_NUMBERS);
+    }
 }
